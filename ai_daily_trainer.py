@@ -2,7 +2,7 @@ import time
 from result_checker import update_predictions
 from model_trainer import train_model
 
-def run_daily_training(cycle_hours=24):
+def run_daily_training(cycle_hours=0.01):
     print("🚀 Günlük AI eğitim döngüsü başladı...")
     while True:
         print("\n📌 Yeni döngü: tahmin sonuçları kontrol ediliyor...")
