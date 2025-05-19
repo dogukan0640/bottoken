@@ -3,6 +3,13 @@ from result_checker import update_predictions
 from model_trainer import train_model
 
 def run_daily_training(cycle_hours=0.01):
+    print("🧠 Başlatılıyor...")
+    open("test_file.txt", "w").write("✅ Çalışıyor!")
+    print("🧪 Dosya yazıldı.")
+
+    while True:
+        ...
+
     print("🧠 Günlük AI eğitim döngüsü başladı...")
     while True:
         try:
