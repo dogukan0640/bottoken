@@ -33,8 +33,12 @@ def train_model():
     model.fit(X, y)
 
     joblib.dump(model, MODEL_FILE)
-    print(f"Model kaydedildi: {MODEL_FILE}")
-    return model
+    joblib.dump(model, MODEL_FILE)
+print(f"✅ Model kaydedildi: {MODEL_FILE}")
+
+import os
+print("📁 Klasördeki dosyalar:", os.listdir())
+
 
 if __name__ == "__main__":
     train_model()
