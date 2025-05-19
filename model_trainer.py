@@ -33,7 +33,6 @@ def train_model():
     model.fit(X, y)
 
     joblib.dump(model, MODEL_FILE)
-    joblib.dump(model, MODEL_FILE)
 print(f"✅ Model kaydedildi: {MODEL_FILE}")
 
 import os
